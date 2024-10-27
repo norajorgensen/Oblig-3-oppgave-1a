@@ -1,0 +1,21 @@
+def my_str_len(ord):
+    count = 0
+    for char in ord:
+        count += 1
+    return count
+
+print(my_str_len("test"))  # Output: 4
+
+
+def my_max(lst):
+    if not lst:
+        raise ValueError("The list cannot be empty")
+
+    max_value = lst[0]
+    for num in lst:
+        if num > max_value:
+            max_value = num
+    return max_value
+
+# Tester funksjonen
+print(my_max([1, 2, 7, 4, 5]))  # Output: 7
